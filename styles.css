@@ -1,0 +1,209 @@
+*{
+    margin:0;
+    box-sizing:border-box;
+    font-family: 'Overpass', sans-serif;
+    letter-spacing: 1px;
+}
+#section{
+    background-color: rgb(57, 57, 61);
+    width:100vw;
+    height:100vh;
+    position:relative;
+    display:flex;
+    flex-direction:column-reverse;
+    align-items: center;
+    overflow-y: hidden;
+}
+
+nav{
+    position:absolute;
+    display:flex;
+    flex-direction:row-reverse;
+    align-items: center;
+    top:0%;
+    width:100%;
+    height:8%;
+  
+
+}
+#ham{
+    cursor:pointer;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width:4%;
+    height:70%;
+    border-radius: 50%;
+}
+
+.hamEl{
+    margin:4%;
+    width:80%;
+    height:17%;
+    background-color: white;
+}
+
+#hamList{
+    position:absolute;
+    height:100%;
+    width:90%;
+    top:-100%;
+    left:0%;
+    background-color:rgba(84, 84, 87, 0.678);    
+    transition:transform 0.3s ease-in; 
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    list-style-position: inside;
+    padding:0%;
+}
+.hamListEl{
+    width:25%;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border:1px solid transparent;
+    color:rgb(180, 182, 190);   
+}
+#change{
+    font-size:1.5vw;
+}
+.clickable{
+    color:rgb(132, 247, 121);
+    font-size:2vw;
+}
+.clickable:hover{
+    color:rgb(177, 212, 78);
+    cursor:pointer;
+    border:1px solid rgb(160, 160, 160);
+    background-color:rgba(27, 27, 27, 0.582);
+}
+#ham:active{
+    background-color:grey;
+}
+
+#container{
+    display:flex;
+    border:3px solid red;
+    flex-wrap:wrap;
+}
+.underDiv{
+    border:0.5px solid green;
+    padding-top: 0.5vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size:2vw;
+    transition: background-color 0.5s;
+}
+.underDiv:hover{
+    background-color: rgb(170, 170, 170);
+}
+
+#timer{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    font-size:3.5vw;
+    border:3px solid white;
+    height:8vh;
+    width:20vw;
+    margin-bottom: 2vh;
+    color:white;
+    
+}
+.timerEl{
+    margin-top:0.5vw;
+    padding:0.25vh;
+}
+
+
+
+
+#lostGameDivContainer{
+    display:none;
+    z-index:99;
+    align-items: center;
+    justify-content: center;
+    background-color:rgba(41, 40, 44, 0.596);
+    width:100vw;
+    height:100vh;
+    position:absolute;
+}
+
+#lostGameDiv{
+    width:60vw;
+    height:60vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size:6vw;
+    background-color:rgba(41, 40, 44, 0.596);
+    border:3px solid white;
+    color:white;
+}
+
+#tryAgainBtn{
+    cursor:pointer;
+    font-size:3vw;
+    margin:3%;
+    padding:3%;
+    background-color: rgba(140, 230, 137, 0.637);
+}
+
+#tryAgainBtn:hover{
+    background-color: rgba(140, 230, 137, 0.837);
+    color:rgb(92, 92, 92);
+}
+
+#tryAgainBtn:active{
+    box-shadow: inset 0 0 30px rgb(94, 94, 94);
+}
+
+
+
+
+#wonGameDivContainer{
+    display:none;
+    z-index:99;
+    align-items: center;
+    justify-content: center;
+    background-color:rgba(41, 40, 44, 0.596);
+    width:100vw;
+    height:100vh;
+    position:absolute;
+}
+
+#wonGameDiv{
+    width:60vw;
+    height:60vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size:6vw;
+    background-color:rgba(41, 40, 44, 0.596);
+    border:3px solid white;
+    color:white;
+}
+
+#playAgainBtn{
+    cursor:pointer;
+    font-size:3vw;
+    margin:3%;
+    padding:3%;
+    background-color: rgba(140, 230, 137, 0.637);
+}
+
+#playAgainBtn:hover{
+    background-color: rgba(140, 230, 137, 0.837);
+    color:rgb(92, 92, 92);
+}
+
+#playAgainBtn:active{
+    box-shadow: inset 0 0 30px rgb(94, 94, 94);
+}
