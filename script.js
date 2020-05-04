@@ -157,6 +157,10 @@ window.addEventListener('load', ()=>{
                             item.style.backgroundColor='red';
                             flagList.push(itemId);   
                         }
+                        else if(uncoveredList.length===elementsCount-(amountOfMines+1)){
+                            gameOver=true;
+                            gameWon();
+                        }
                         else{
                             item.style.backgroundColor=null;
                             flagList.pop(itemId);
@@ -423,6 +427,7 @@ window.addEventListener('load', ()=>{
         allElementsList=[];
         minesList=[];
         uncoveredList=[];
+        flagList=[];
         elementsAroundMines.clear();
         firstClick=false;
         gameOver=false;
