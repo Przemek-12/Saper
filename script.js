@@ -422,6 +422,8 @@ window.addEventListener('load', ()=>{
     }
 
 
+
+    
     //clearing data after switching difficulty, try again
     function clear(){
         allElementsList=[];
